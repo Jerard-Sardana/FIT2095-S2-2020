@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <head>
+           <link rel="stylesheet" href="styles.css">
+       </head>
+       <style>
+           table,th,td {
+               border: 1px solid black;
+           }
+       </style>
+   </head>
+   <body>
+        <h1 style="color:cyan">Author List</h1></br>
+        <h1>
+            <a href='/'>Home</a>
+            <a href='/addauthors'>Add Authors</a>
+            <a href='/authorlist'>Author List</a>
+            <a href='/addbook'>Add Book</a>
+            <a href='/booklist'>Book List</a>
+            <a href='/deletebook'>Delete Books</a>
+            <a href='/updateauthor'>Update Author Publications</a>
+        </h1>
+   </body>
+    <body>
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>DOB</th>
+                <th>Address</th>
+                <th>No. Publications</th>
+                <th>Author ID</th>
+            </tr>
+            <%for (let i=0;i<adb.length; i++){ %>
+                <tr>
+                    <td><%=(i+1) %></td>
+                    <td><%= adb[i].name.firstName+ " "+adb[i].name.lastName %></td>
+                    <td><%= adb[i].dob %></td>
+                    <td><%= adb[i].address.unit+ " "+adb[i].address.street+", "+adb[i].address.state %></td>
+                    <td><%= adb[i].pubs %></td>
+                    <td><%= adb[i]._id %></td>
+                </tr>
+            <%}%>
+        </table>
+    </body>
+</html>

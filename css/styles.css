@@ -1,0 +1,21 @@
+ body {
+    background-color: #daafda;
+    background-image: url(https://files.wallpaperpass.com/2019/10/vaporwave%20wallpaper%2004%20-%201920x1080.jpg);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  font{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: black;
+  }
+  a:link, a:visited {
+        background-color:palevioletred;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+      
+    a:hover, a:active {
+        background-color:fuchsia;
+    }

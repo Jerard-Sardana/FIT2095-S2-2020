@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 style="color:cyan">Add a Book</h1></br>
+        <h1>
+            <a href='/'>Home</a>
+            <a href='/addauthors'>Add Authors</a>
+            <a href='/authorlist'>Author List</a>
+            <a href='/addbook'>Add Book</a>
+            <a href='/booklist'>Book List</a>
+            <a href='/deletebook'>Delete Books</a>
+            <a href='/updateauthor'>Update Author Publications</a>
+        </h1>
+        <form action="/newbook"  method="POST">
+            Title <input type="text" name="title" /></br>
+            ISBN <input type="text" name="isbn" /></br>
+            Author ID <input type="text" name="authorId" /></br>
+            Date Published <input type="date" name="pubdate" /></br>
+            Summary <input type="text" name="summary" /></br>
+            <input type="submit" value="Submit"/></br>
+        </form>
+    </body>
+</html>
